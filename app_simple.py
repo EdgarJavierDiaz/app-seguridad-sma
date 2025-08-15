@@ -168,7 +168,7 @@ def main():
         st.markdown("---")
         st.subheader(f"🌤 Clima actual – {ciudad.title()}")
         api_key = st.secrets["KEY"]
-        obtener_clima(ciudad, key)
+        obtener_clima(ciudad, api_key)
 
         st.markdown("---")
         st.subheader("📰 Noticias de orden público (filtradas por ciudad)")
