@@ -229,7 +229,7 @@ def main():
 with st.expander("📋 Ver Decálogo de Seguridad para Desplazamientos de Funcionarios"):
     try:
         image = Image.open("Decalogo.png")
-        st.image(resource_path("Decalogo.png"), caption="Decálogo de Seguridad SMA",use_container_width=True)
+        st.image(resource_path("Decalogo.png"), caption="Decálogo de Seguridad SMA",use_column_width=True)
     except FileNotFoundError:
         st.warning("No se encontró el archivo Decalogo.png en la carpeta del proyecto.")
 
