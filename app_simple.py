@@ -167,7 +167,7 @@ def main():
 
         st.markdown("---")
         st.subheader(f"🌤 Clima actual – {ciudad.title()}")
-        key = st.secrets.get("WEATHER_API_KEY", "")
+        api_key = st.secrets["KEY"]
         obtener_clima(ciudad, key)
 
         st.markdown("---")
